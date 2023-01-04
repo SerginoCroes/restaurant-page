@@ -1,13 +1,13 @@
-import {drawhome} from "./homepage";
+import {drawformat} from "./format";
 
 const content = document.querySelector('#content');
 
 let mainContent = document.createElement('div');
 mainContent.classList.add('main');
 
-content.appendChild(drawhome().header);
+content.appendChild(drawformat().header);
 content.appendChild(mainContent);
-content.appendChild(drawhome().footer);
+content.appendChild(drawformat().footer);
 
 console.log(drawhome().header);
 
