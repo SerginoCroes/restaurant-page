@@ -39,17 +39,23 @@ body {
 
 .main {
     padding: 1em;
-    height: 80vh;
+    height: 85vh;
     background-color: rgba(242, 197, 61, 30%);
     color: #590902;
     text-align: center;
 }
 
 .footer {
-    height: 10vh;
+    height: 5vh;
     background-color: rgba(217, 150, 26, 30%);
+    color: #590902;
+    text-align: center;
 }
 
+.footer p {
+    position: relative;
+    top: 20%;
+}
 
 /*
 
