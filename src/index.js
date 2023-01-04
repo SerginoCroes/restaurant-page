@@ -14,13 +14,20 @@ content.appendChild(drawFormat().header);
 content.appendChild(mainContent);
 content.appendChild(drawFormat().footer);
 
+let currentActive = document.querySelector('.active');
+
 document.querySelectorAll('.menubutton').forEach(item => {
-    item.addEventListener('click', event => changeContent(event));
+    item.addEventListener('click', event => changeContent(event.target));
 });
 
-function changeContent(event) {
+function changeContent(target) {
 
-    let textContent = event.target.textContent;
+    let textContent = target.textContent;
+
+    currentActive.classList.remove('active');
+    target.classList.add('active');
+
+    currentActive = target;
 
     content.removeChild(content.querySelector('.main')); 
     content.removeChild(content.querySelector('.footer')); 
@@ -30,5 +37,4 @@ function changeContent(event) {
 
     content.appendChild(mainContent);
     content.appendChild(drawFormat().footer);
-
 }
