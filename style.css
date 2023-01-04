@@ -8,6 +8,11 @@ body {
     font-family: sans-serif;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     height: 15vh;
     position: relative;
