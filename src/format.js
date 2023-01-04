@@ -1,4 +1,4 @@
-export function drawformat() {
+export function drawFormat() {
 
     const header = document.createElement('div');
     const footer = document.createElement('div');

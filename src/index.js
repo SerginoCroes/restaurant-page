@@ -1,14 +1,34 @@
-import {drawformat} from "./format";
+import {drawFormat} from "./format";
+import {homePage} from "./homepage";
+import {menuPage} from "./menupage";
+import {contactPage} from "./contactpage";
 
 const content = document.querySelector('#content');
 
-let mainContent = document.createElement('div');
+const contentTable = {home: homePage(), menu: menuPage(), contact: contactPage()};
+
+let mainContent = contentTable.home;
 mainContent.classList.add('main');
 
-content.appendChild(drawformat().header);
+content.appendChild(drawFormat().header);
 content.appendChild(mainContent);
-content.appendChild(drawformat().footer);
+content.appendChild(drawFormat().footer);
 
-console.log(drawhome().header);
+document.querySelectorAll('.menubutton').forEach(item => {
+    item.addEventListener('click', event => changeContent(event));
+});
 
-//drawhome();
+function changeContent(event) {
+
+    let textContent = event.target.textContent;
+
+    content.removeChild(content.querySelector('.main')); 
+    content.removeChild(content.querySelector('.footer')); 
+
+    mainContent = contentTable[textContent];
+    mainContent.classList.add('main');
+
+    content.appendChild(mainContent);
+    content.appendChild(drawFormat().footer);
+
+}
