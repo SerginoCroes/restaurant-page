@@ -7,7 +7,7 @@ export function contactPage() {
     for(let sentence of content){
 
         let temp = document.createElement('p');
-
+        
         temp.innerText = sentence;
 
         output.appendChild(temp);
