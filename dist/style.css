@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    height: 10vh;
+    height: 15vh;
     position: relative;
 }
 
@@ -22,11 +22,11 @@ body {
 }
 
 .header h1 {
-    top: 20%;
+    top: 10%;
 }
 
 .header p {
-    top: 60%;
+    top: 50%;
 }
 
 .header .background {
@@ -37,12 +37,37 @@ body {
     height: 100%;
 }
 
+.menu {
+    position: absolute;
+    width: 100%;
+    top: calc(100% + -27px);
+}
+
+.menulist {
+    text-align: center;
+}
+
+.menubutton {
+    height: 30px;
+    color: #590902;
+    display: inline-block;
+    margin: 0px 20px;
+    border: 3px solid #590902;
+}
+
+.active {
+    background-color: rgb(251,238,197);
+    border-bottom: 3px solid rgb(251,238,197);
+}
+
 .main {
     padding: 1em;
-    height: 85vh;
+    height: 80vh;
     background-color: rgba(242, 197, 61, 30%);
     color: #590902;
     text-align: center;
+    border-top: 3px solid #590902;
+    border-bottom: 3px solid #590902;
 }
 
 .footer {
