@@ -8,7 +8,9 @@ body {
     font-family: sans-serif;
 }
 
-.content {
+#content {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -69,7 +71,7 @@ body {
 }
 
 .main {
-    height: calc(95vh - 120px);
+    height: 100%;
     padding: 2em;
     background-color: rgb(251,238,197);
     color: #590902;
