@@ -22,19 +22,17 @@ document.querySelectorAll('.menubutton').forEach(item => {
 
 function changeContent(target) {
 
-    let textContent = target.textContent;
-
+    console.log(target);
+    
     currentActive.classList.remove('active');
     target.classList.add('active');
 
     currentActive = target;
 
-    content.removeChild(content.querySelector('.main')); 
-    content.removeChild(content.querySelector('.footer')); 
-
-    mainContent = contentTable[textContent];
+    mainContent = contentTable[target.textContent];
     mainContent.classList.add('main');
 
-    content.appendChild(mainContent);
-    content.appendChild(drawFormat().footer);
+    content.removeChild(content.querySelector('.main'));
+    content.insertBefore(mainContent, content.querySelector('.footer'));
+
 }

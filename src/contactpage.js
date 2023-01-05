@@ -1,6 +1,6 @@
 export function contactPage() {
 
-    let content = ['Zevende zin.','Achtste zin.','Negende zin.'];
+    let content = ['Neem contact op met de friettent via:','Email: contact@defriettent.nl.','Telefoon: 0123-456789.', 'Adres: Frietstraat 123', '1234FR Frietstad', 'FRIETLAND'];
 
     let output = document.createElement('div');
 

@@ -1,6 +1,6 @@
 export function menuPage() {
 
-    let content = ['Vierde zin.','Vijfde zin.','Zesde zin.'];
+    let content = ['MENU', 'Vierde zin.','Vijfde zin.','Zesde zin.'];
 
     let output = document.createElement('div');
 

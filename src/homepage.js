@@ -1,6 +1,6 @@
 export function homePage() {
 
-    let content = ['Eerste zin.','Tweede zin.','Derde zin.'];
+    let content = ['HOME', 'Eerste zin.','Tweede zin.','Derde zin.'];
 
     let output = document.createElement('div');
 
