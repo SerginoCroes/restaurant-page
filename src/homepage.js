@@ -1,6 +1,6 @@
 export function homePage() {
 
-    let content = ['HOME', 'Eerste zin.','Tweede zin.','Derde zin.'];
+    let content = ['Welkom!', 'Welkom op de website van de beste friettent van het land.','U kunt hier informatie vinden over ons menu en ook kunt u hier contactinformatie vinden.','Selecteer hiervoor de respectivelijke tabbladen.'];
 
     let output = document.createElement('div');
 

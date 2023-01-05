@@ -8,8 +8,12 @@ body {
     font-family: sans-serif;
 }
 
+.content {
+    height: 100vh;
+}
+
 .header {
-    height: 15vh;
+    height: 120px;
     position: relative;
 }
 
@@ -49,12 +53,12 @@ body {
 
 .menubutton {
     height: 30px;
-    width: 150px;
+    width: max(80px, 20vw);
     color: #590902;
     font-weight: bold;
     display: inline-block;
     padding: 5px;
-    margin: 0px 20px;
+    margin: 0px 5vw;
     border: 3px solid #590902;
     cursor: pointer;
 }
@@ -65,9 +69,9 @@ body {
 }
 
 .main {
+    height: calc(95vh - 120px);
     padding: 2em;
-    height: 80vh;
-    background-color: rgba(242, 197, 61, 30%);
+    background-color: rgb(251,238,197);
     color: #590902;
     text-align: center;
     border-top: 3px solid #590902;
@@ -80,7 +84,7 @@ body {
 
 .footer {
     height: 5vh;
-    background-color: rgba(217, 150, 26, 30%);
+    background-color: rgb(244,224,186);
     color: #590902;
     text-align: center;
 }

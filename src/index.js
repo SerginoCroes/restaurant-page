@@ -22,8 +22,6 @@ document.querySelectorAll('.menubutton').forEach(item => {
 
 function changeContent(target) {
 
-    console.log(target);
-    
     currentActive.classList.remove('active');
     target.classList.add('active');
 
