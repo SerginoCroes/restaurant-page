@@ -8,11 +8,6 @@ body {
     font-family: sans-serif;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-}
-
 .header {
     height: 15vh;
     position: relative;
@@ -45,7 +40,7 @@ body {
 .menu {
     position: absolute;
     width: 100%;
-    top: calc(100% + -27px);
+    bottom: -3px;
 }
 
 .menulist {
@@ -54,12 +49,14 @@ body {
 
 .menubutton {
     height: 30px;
+    width: 150px;
     color: #590902;
     font-weight: bold;
     display: inline-block;
     padding: 5px;
     margin: 0px 20px;
     border: 3px solid #590902;
+    cursor: pointer;
 }
 
 .active {
@@ -68,13 +65,17 @@ body {
 }
 
 .main {
-    padding: 1em;
+    padding: 2em;
     height: 80vh;
     background-color: rgba(242, 197, 61, 30%);
     color: #590902;
     text-align: center;
     border-top: 3px solid #590902;
     border-bottom: 3px solid #590902;
+}
+
+.main p {
+    margin: 0.5em;
 }
 
 .footer {
